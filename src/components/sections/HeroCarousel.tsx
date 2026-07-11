@@ -19,15 +19,6 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "/images/hero/safetynets.webp",
-    badge: "Premium Protection",
-    title: "Heavy-Duty Safety Nets & Balcony Netting Solutions",
-    subtitle: "Absolute safety for your children and pets without compromising ventilation. Customized high-tensile netting engineered to endure extreme Chennai weather.",
-    ctaText: "Explore Safety Nets",
-    ctaLink: "#services",
-  },
-  {
-    id: 2,
     image: "/images/hero/balconygrill.jpg",
     badge: "Architectural Elegance",
     title: "Elegant Invisible Grills for Windows & Balconies",
@@ -36,7 +27,7 @@ const slides: Slide[] = [
     ctaLink: "#services",
   },
   {
-    id: 3,
+    id: 2,
     image: "/images/hero/cloth-hanger1.jpg",
     badge: "Space-Saving Innovation",
     title: "Premium Ceiling & Balcony Cloth Hangers",
@@ -45,12 +36,21 @@ const slides: Slide[] = [
     ctaLink: "#services",
   },
   {
-    id: 4,
+    id: 3,
     image: "/images/hero/pigeonnet.jpg",
     badge: "Pigeon Exclusion",
     title: "100% Pigeon & Bird Proofing Balcony Nets",
     subtitle: "Keep pigeons and birds away from nesting on your balcony. Elegant, durable, and transparent netting solutions.",
     ctaText: "View Bird Netting",
+    ctaLink: "#services",
+  },
+  {
+    id: 4,
+    image: "/images/hero/safetynets.webp",
+    badge: "Premium Protection",
+    title: "Heavy-Duty Safety Nets & Balcony Netting Solutions",
+    subtitle: "Absolute safety for your children and pets without compromising ventilation. Customized high-tensile netting engineered to endure extreme Chennai weather.",
+    ctaText: "Explore Safety Nets",
     ctaLink: "#services",
   },
 ];
