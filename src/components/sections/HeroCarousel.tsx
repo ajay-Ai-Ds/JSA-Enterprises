@@ -209,7 +209,7 @@ export default function HeroCarousel() {
       {/* Text Content Overlay — always shows real slide content */}
       <div className="absolute inset-0 flex items-center pointer-events-none">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={realIndex}
               initial={{ opacity: 0, y: 30 }}
