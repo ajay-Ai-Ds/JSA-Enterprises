@@ -147,19 +147,18 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
 
-        {/* Google Analytics 4 (GA4) placeholder */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZCYPR2V24D"
-          strategy="afterInteractive"
+        {/* Google Analytics 4 (GA4) - Standard script for GSC Verification */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCYPR2V24D"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZCYPR2V24D');
+            `,
+          }}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-ZCYPR2V24D');
-          `}
-        </Script>
 
         {/* Google Tag Manager (GTM) placeholder */}
         <Script id="gtm" strategy="lazyOnload">
