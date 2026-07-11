@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "JSA Enterprises Chennai",
   ],
   metadataBase: new URL("https://www.jsaenterpriseschennai.com"),
+  verification: {
+    google: "fYQkLBeMnZJOHutLePpTNA_y7Z98S0mCOZuzBiJdrpE",
+  },
   alternates: {
     canonical: "/",
   },
