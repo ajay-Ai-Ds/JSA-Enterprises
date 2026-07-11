@@ -23,19 +23,19 @@ export default function InvisibleGrillsCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://jsaenterprises.com",
+        "item": "https://www.jsaenterpriseschennai.com",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://jsaenterprises.com/services",
+        "item": "https://www.jsaenterpriseschennai.com/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Invisible Grills",
-        "item": "https://jsaenterprises.com/services/invisible-grills",
+        "item": "https://www.jsaenterpriseschennai.com/services/invisible-grills",
       },
     ],
   };

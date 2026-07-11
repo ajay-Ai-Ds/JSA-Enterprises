@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
 
           <div className="space-y-6 text-xs sm:text-sm text-slate-500 leading-relaxed">
             <p>
-              Last Updated: July 10, 2026. JSA Enterprises (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the website https://jsaenterprises.com. We respect your privacy and are committed to protecting any personal identifiable information you share with us.
+              Last Updated: July 10, 2026. JSA Enterprises (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) operates the website https://www.jsaenterpriseschennai.com. We respect your privacy and are committed to protecting any personal identifiable information you share with us.
             </p>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">

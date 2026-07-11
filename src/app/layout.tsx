@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     "Ceiling Cloth Hangers Chennai",
     "JSA Enterprises Chennai",
   ],
-  metadataBase: new URL("https://jsaenterprises.com"),
+  metadataBase: new URL("https://www.jsaenterpriseschennai.com"),
   alternates: {
     canonical: "/",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "JSA Enterprises | Premium Safety Nets & Invisible Grills",
     description:
       "Expert safety netting and modern invisible grill installation in Chennai. Rest assured with safety nets built for high durability and style.",
-    url: "https://jsaenterprises.com",
+    url: "https://www.jsaenterpriseschennai.com",
     siteName: "JSA Enterprises",
     images: [
       {
@@ -73,12 +73,12 @@ export default function RootLayout({
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://jsaenterprises.com/#localbusiness",
+    "@id": "https://www.jsaenterpriseschennai.com/#localbusiness",
     "name": "JSA Enterprises",
-    "url": "https://jsaenterprises.com",
+    "url": "https://www.jsaenterpriseschennai.com",
     "telephone": "+91 77026 94269",
     "email": "info.jsaenterprises@gmail.com",
-    "image": "https://jsaenterprises.com/images/og-image.webp",
+    "image": "https://www.jsaenterpriseschennai.com/images/og-image.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Content Required From Client",
@@ -113,8 +113,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "JSA Enterprises",
-    "url": "https://jsaenterprises.com",
-    "logo": "https://jsaenterprises.com/images/logo.png",
+    "url": "https://www.jsaenterpriseschennai.com",
+    "logo": "https://www.jsaenterpriseschennai.com/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-77026-94269",

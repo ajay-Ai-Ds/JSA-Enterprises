@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: `${serviceDetail.title}`,
       description: serviceDetail.description,
-      url: `https://jsaenterprises.com/services/${resolvedParams.service}`,
+      url: `https://www.jsaenterpriseschennai.com/services/${resolvedParams.service}`,
       images: [
         {
           url: serviceDetail.image,

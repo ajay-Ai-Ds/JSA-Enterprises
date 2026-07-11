@@ -8,8 +8,8 @@ export function generateOrganizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "JSA Enterprises",
-    "url": "https://jsaenterprises.com",
-    "logo": "https://jsaenterprises.com/images/logo.png",
+    "url": "https://www.jsaenterpriseschennai.com",
+    "logo": "https://www.jsaenterpriseschennai.com/images/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+91-77026-94269",
@@ -24,12 +24,12 @@ export function generateLocalBusinessSchema(areaName?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://jsaenterprises.com/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
+    "@id": `https://www.jsaenterpriseschennai.com/#localbusiness${areaName ? `-${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
     "name": `JSA Enterprises${areaName ? ` - ${areaName}` : ""}`,
-    "url": `https://jsaenterprises.com${areaName ? `/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
+    "url": `https://www.jsaenterpriseschennai.com${areaName ? `/areas/${areaName.toLowerCase().replace(/\s+/g, "-")}` : ""}`,
     "telephone": "+91 77026 94269",
     "email": "info.jsaenterprises@gmail.com",
-    "image": "https://jsaenterprises.com/images/og-image.webp",
+    "image": "https://www.jsaenterpriseschennai.com/images/og-image.webp",
     "priceRange": "Content Required From Client",
     "address": {
       "@type": "PostalAddress",
@@ -65,11 +65,11 @@ export function generateWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://jsaenterprises.com",
+    "url": "https://www.jsaenterpriseschennai.com",
     "name": "JSA Enterprises",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://jsaenterprises.com/search?q={search_term_string}",
+      "target": "https://www.jsaenterpriseschennai.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };
@@ -83,7 +83,7 @@ export function generateBreadcrumbSchema(links: SchemaBreadcrumb[]) {
       "@type": "ListItem",
       "position": index + 1,
       "name": link.name,
-      "item": link.item.startsWith("http") ? link.item : `https://jsaenterprises.com${link.item}`,
+      "item": link.item.startsWith("http") ? link.item : `https://www.jsaenterpriseschennai.com${link.item}`,
     })),
   };
 }
@@ -134,14 +134,14 @@ export function generateArticleSchema(title: string, description: string, image:
     "author": {
       "@type": "Organization",
       "name": "JSA Enterprises",
-      "url": "https://jsaenterprises.com",
+      "url": "https://www.jsaenterpriseschennai.com",
     },
     "publisher": {
       "@type": "Organization",
       "name": "JSA Enterprises",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jsaenterprises.com/images/logo.png",
+        "url": "https://www.jsaenterpriseschennai.com/images/logo.png",
       },
     },
   };

@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         "/_next/",
       ],
     },
-    sitemap: "https://jsaenterprises.com/sitemap.xml",
+    sitemap: "https://www.jsaenterpriseschennai.com/sitemap.xml",
   };
 }

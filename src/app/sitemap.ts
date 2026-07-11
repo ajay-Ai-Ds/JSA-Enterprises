@@ -5,7 +5,7 @@ import { projectsData } from "@/utils/projectsData";
 import { blogData } from "@/utils/blogData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://jsaenterprises.com";
+  const baseUrl = "https://www.jsaenterpriseschennai.com";
 
   // 1. Static Routes
   const staticRoutes = [

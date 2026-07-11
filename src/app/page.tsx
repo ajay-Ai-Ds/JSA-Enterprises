@@ -17,10 +17,10 @@ export default function Home() {
   const searchActionSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "url": "https://jsaenterprises.com",
+    "url": "https://www.jsaenterpriseschennai.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://jsaenterprises.com/search?q={search_term_string}",
+      "target": "https://www.jsaenterpriseschennai.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string",
     },
   };

@@ -48,13 +48,13 @@ export default function ServicesPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://jsaenterprises.com",
+        "item": "https://www.jsaenterpriseschennai.com",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://jsaenterprises.com/services",
+        "item": "https://www.jsaenterpriseschennai.com/services",
       },
     ],
   };

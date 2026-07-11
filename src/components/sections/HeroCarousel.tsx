@@ -55,71 +55,102 @@ const slides: Slide[] = [
   },
 ];
 
+// Build an extended array: [last, ...slides, first] for seamless infinite loop
+const totalSlides = slides.length;
+// We'll clone the entire array at start and end for a buffer
+const extendedSlides = [slides[totalSlides - 1], ...slides, slides[0]];
+
+const TRANSITION_DURATION = 700; // ms
+const AUTOPLAY_INTERVAL = 3000; // ms
+
 export default function HeroCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // index into extendedSlides; starts at 1 (first real slide)
+  const [activeIndex, setActiveIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const transitionLockRef = useRef(false);
 
-  // Minimum swipe distance in pixels
   const minSwipeDistance = 50;
 
-  const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  // Derived: real slide index (0-based) for dots & content overlay
+  const realIndex = ((activeIndex - 1) % totalSlides + totalSlides) % totalSlides;
+
+  const goToNext = useCallback(() => {
+    if (transitionLockRef.current) return;
+    transitionLockRef.current = true;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev + 1);
   }, []);
 
-  const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  const goToPrev = useCallback(() => {
+    if (transitionLockRef.current) return;
+    transitionLockRef.current = true;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev - 1);
   }, []);
 
-  // Autoplay Logic - Reduced to 3 seconds (3000ms)
+  // After slide transition ends, silently jump if we're on a clone
+  const handleTransitionEnd = useCallback(() => {
+    setIsTransitioning(false);
+    transitionLockRef.current = false;
+
+    setActiveIndex((prev) => {
+      // If we slid to the clone of the first real slide (index 0 in extended)
+      if (prev === 0) {
+        return totalSlides; // jump to the last real slide
+      }
+      // If we slid to the clone of the last real slide (index totalSlides+1 in extended)
+      if (prev === totalSlides + 1) {
+        return 1; // jump to the first real slide
+      }
+      return prev;
+    });
+  }, []);
+
+  // Autoplay
   useEffect(() => {
     if (isPaused) return;
-
-    const timer = setInterval(() => {
-      nextSlide();
-    }, 3000);
-
+    const timer = setInterval(goToNext, AUTOPLAY_INTERVAL);
     return () => clearInterval(timer);
-  }, [nextSlide, isPaused]);
+  }, [goToNext, isPaused]);
 
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "ArrowLeft") {
-        prevSlide();
-      } else if (e.key === "ArrowRight") {
-        nextSlide();
-      }
+      if (e.key === "ArrowLeft") goToPrev();
+      else if (e.key === "ArrowRight") goToNext();
     };
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [nextSlide, prevSlide]);
+  }, [goToNext, goToPrev]);
 
-  // Swipe Gestures
+  // Touch gestures
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
   };
-
   const onTouchMove = (e: React.TouchEvent) => {
     setTouchEnd(e.targetTouches[0].clientX);
   };
-
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
     const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > minSwipeDistance;
-    const isRightSwipe = distance < -minSwipeDistance;
-
-    if (isLeftSwipe) {
-      nextSlide();
-    } else if (isRightSwipe) {
-      prevSlide();
-    }
+    if (distance > minSwipeDistance) goToNext();
+    else if (distance < -minSwipeDistance) goToPrev();
   };
+
+  // Go to specific real dot index
+  const goToSlide = (dotIndex: number) => {
+    if (transitionLockRef.current) return;
+    transitionLockRef.current = true;
+    setIsTransitioning(true);
+    setActiveIndex(dotIndex + 1); // +1 because of leading clone
+  };
+
+  const translateX = -activeIndex * 100;
 
   return (
     <section
@@ -133,119 +164,121 @@ export default function HeroCarousel() {
       aria-label="JSA Enterprises Hero Slider"
       tabIndex={0}
     >
-      {/* Slides */}
-      <AnimatePresence>
-        <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.8 }}
-          className="absolute inset-0 w-full h-full"
-        >
-          {/* Ken Burns effect image container */}
-          <motion.div
-            initial={{ scale: 1 }}
-            animate={{ scale: 1.06 }}
-            transition={{ duration: 3.2, ease: "easeOut" }}
-            className="relative w-full h-full"
+      {/* Infinite slide strip */}
+      <div
+        className="flex h-full"
+        style={{
+          width: `${extendedSlides.length * 100}%`,
+          transform: `translateX(${translateX / extendedSlides.length}%)`,
+          transition: isTransitioning
+            ? `transform ${TRANSITION_DURATION}ms cubic-bezier(0.77, 0, 0.175, 1)`
+            : "none",
+          willChange: "transform",
+        }}
+        onTransitionEnd={handleTransitionEnd}
+      >
+        {extendedSlides.map((slide, idx) => (
+          <div
+            key={`${slide.id}-${idx}`}
+            className="relative h-full flex-shrink-0"
+            style={{ width: `${100 / extendedSlides.length}%` }}
           >
-            <Image
-              src={slides[currentIndex].image}
-              alt={slides[currentIndex].title}
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover object-center filter brightness-[0.4]"
-            />
-          </motion.div>
-
-          {/* Slide Text Content Overlay */}
-          <div className="absolute inset-0 flex items-center">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-              <div className="max-w-3xl text-left flex flex-col items-start gap-4 sm:gap-6">
-                {/* Badge overlay */}
-                <motion.span
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
-                  className="bg-accent-orange/90 text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md"
-                >
-                  {slides[currentIndex].badge}
-                </motion.span>
-
-                {/* Main Heading */}
-                <motion.h1
-                  initial={{ opacity: 0, y: 25 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight"
-                >
-                  {slides[currentIndex].title}
-                </motion.h1>
-
-                {/* Subtitle */}
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl"
-                >
-                  {slides[currentIndex].subtitle}
-                </motion.p>
-
-                {/* Action Buttons */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  className="flex flex-wrap gap-4 mt-2"
-                >
-                  {/* Call Button */}
-                  <a
-                    href="tel:+917702694269"
-                    className="flex items-center gap-2.5 bg-accent-orange text-white font-bold px-6 py-3.5 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-sm"
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span>Call +91 77026 94269</span>
-                  </a>
-
-                  {/* WhatsApp Button */}
-                  <a
-                    href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I%20would%20like%20to%20request%20a%20free%20site%20visit."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2.5 bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
-                  >
-                    <MessageSquare className="w-4 h-4 fill-white/10" />
-                    <span>WhatsApp Quote</span>
-                  </a>
-
-                  {/* Request Quote Button */}
-                  <Link
-                    href="#contact"
-                    className="flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-6 py-3.5 rounded-full transition-all border border-white/30 backdrop-blur-xs text-sm"
-                  >
-                    <span>Request Quote</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </motion.div>
-              </div>
+            {/* Ken Burns effect */}
+            <div
+              className="relative w-full h-full overflow-hidden"
+              style={{
+                animation:
+                  idx === activeIndex
+                    ? `kenBurns ${AUTOPLAY_INTERVAL + TRANSITION_DURATION}ms ease-out forwards`
+                    : "none",
+              }}
+            >
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                priority={idx === 1}
+                sizes="100vw"
+                className="object-cover object-center filter brightness-[0.4]"
+              />
             </div>
           </div>
-        </motion.div>
-      </AnimatePresence>
+        ))}
+      </div>
+
+      {/* Text Content Overlay — always shows real slide content */}
+      <div className="absolute inset-0 flex items-center pointer-events-none">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={realIndex}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.55, ease: "easeOut" }}
+              className="max-w-3xl text-left flex flex-col items-start gap-4 sm:gap-6 pointer-events-auto"
+            >
+              {/* Badge */}
+              <span className="bg-accent-orange/90 text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md">
+                {slides[realIndex].badge}
+              </span>
+
+              {/* Main Heading */}
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight">
+                {slides[realIndex].title}
+              </h1>
+
+              {/* Subtitle */}
+              <p className="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+                {slides[realIndex].subtitle}
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap gap-4 mt-2">
+                {/* Call Button */}
+                <a
+                  href="tel:+917702694269"
+                  className="flex items-center gap-2.5 bg-accent-orange text-white font-bold px-6 py-3.5 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-sm"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>Call +91 77026 94269</span>
+                </a>
+
+                {/* WhatsApp Button */}
+                <a
+                  href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I%20would%20like%20to%20request%20a%20free%20site%20visit."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
+                >
+                  <MessageSquare className="w-4 h-4 fill-white/10" />
+                  <span>WhatsApp Quote</span>
+                </a>
+
+                {/* Request Quote Button */}
+                <Link
+                  href="#contact"
+                  className="flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-6 py-3.5 rounded-full transition-all border border-white/30 backdrop-blur-xs text-sm"
+                >
+                  <span>Request Quote</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
 
       {/* Control Chevrons (Desktop Only) */}
       <button
-        onClick={prevSlide}
+        onClick={goToPrev}
         className="hidden md:flex absolute top-1/2 left-6 -translate-y-1/2 w-12 h-12 rounded-full bg-black/30 hover:bg-accent-orange text-white items-center justify-center border border-white/10 backdrop-blur-xs transition-colors cursor-pointer"
         aria-label="Previous Slide"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
-        onClick={nextSlide}
+        onClick={goToNext}
         className="hidden md:flex absolute top-1/2 right-6 -translate-y-1/2 w-12 h-12 rounded-full bg-black/30 hover:bg-accent-orange text-white items-center justify-center border border-white/10 backdrop-blur-xs transition-colors cursor-pointer"
         aria-label="Next Slide"
       >
@@ -257,15 +290,23 @@ export default function HeroCarousel() {
         {slides.map((slide, index) => (
           <button
             key={slide.id}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => goToSlide(index)}
             className={`h-2.5 rounded-full transition-all duration-300 ${
-              index === currentIndex ? "w-8 bg-accent-orange" : "w-2.5 bg-white/40 hover:bg-white/70"
+              index === realIndex ? "w-8 bg-accent-orange" : "w-2.5 bg-white/40 hover:bg-white/70"
             }`}
             aria-label={`Go to slide ${index + 1}`}
-            aria-current={index === currentIndex ? "true" : "false"}
+            aria-current={index === realIndex ? "true" : "false"}
           />
         ))}
       </div>
+
+      {/* Ken Burns keyframe animation */}
+      <style>{`
+        @keyframes kenBurns {
+          from { transform: scale(1); }
+          to   { transform: scale(1.06); }
+        }
+      `}</style>
     </section>
   );
 }

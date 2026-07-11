@@ -23,7 +23,7 @@ export default function GalleryPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Photo Gallery | JSA Enterprises",
-    "url": "https://jsaenterprises.com/gallery",
+    "url": "https://www.jsaenterpriseschennai.com/gallery",
     "description": "Photo archives of completed netting and invisible grill setups by JSA in Chennai.",
   };
 

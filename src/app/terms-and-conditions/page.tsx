@@ -48,7 +48,7 @@ export default function TermsAndConditionsPage() {
 
           <div className="space-y-6 text-xs sm:text-sm text-slate-500 leading-relaxed">
             <p>
-              Welcome to the JSA Enterprises website (https://jsaenterprises.com). By accessing our site and booking our safety installations, you agree to comply with and be bound by the following terms of service.
+              Welcome to the JSA Enterprises website (https://www.jsaenterpriseschennai.com). By accessing our site and booking our safety installations, you agree to comply with and be bound by the following terms of service.
             </p>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">

@@ -23,19 +23,19 @@ export default function ClothHangersCategoryPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://jsaenterprises.com",
+        "item": "https://www.jsaenterpriseschennai.com",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Services",
-        "item": "https://jsaenterprises.com/services",
+        "item": "https://www.jsaenterpriseschennai.com/services",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Cloth Hangers",
-        "item": "https://jsaenterprises.com/services/cloth-hangers",
+        "item": "https://www.jsaenterpriseschennai.com/services/cloth-hangers",
       },
     ],
   };

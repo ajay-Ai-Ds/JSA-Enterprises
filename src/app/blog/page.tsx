@@ -27,7 +27,7 @@ export default async function BlogPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Safety and Home Childproofing Blog | JSA",
-    "url": "https://jsaenterprises.com/blog",
+    "url": "https://www.jsaenterpriseschennai.com/blog",
     "description": "Resources on balcony netting, invisible grills, and safety advice.",
   };
 
