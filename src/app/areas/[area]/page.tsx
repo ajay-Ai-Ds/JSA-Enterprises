@@ -27,6 +27,26 @@ export async function generateMetadata({ params }: PageProps) {
     alternates: {
       canonical: `/areas/${resolvedParams.area}`,
     },
+    openGraph: {
+      title: `Safety Nets & Invisible Grills in ${areaDetail.name}, Chennai | JSA`,
+      description: `JSA Enterprises offers professional balcony safety nets, kid safety grids, and rustproof invisible grills in ${areaDetail.name}, Chennai. Free measurements.`,
+      url: `https://www.jsaenterpriseschennai.com/areas/${resolvedParams.area}`,
+      images: [
+        {
+          url: "/images/og-image.webp",
+          width: 1200,
+          height: 630,
+          alt: `Safety Nets in ${areaDetail.name}, Chennai`,
+        },
+      ],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `Safety Nets & Invisible Grills in ${areaDetail.name}, Chennai | JSA`,
+      description: `JSA Enterprises offers professional balcony safety nets, kid safety grids, and rustproof invisible grills in ${areaDetail.name}, Chennai. Free measurements.`,
+      images: ["/images/og-image.webp"],
+    },
   };
 }
 

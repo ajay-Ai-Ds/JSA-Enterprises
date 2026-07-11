@@ -30,13 +30,13 @@ export function generateLocalBusinessSchema(areaName?: string) {
     "telephone": "+91 77026 94269",
     "email": "info.jsaenterprises@gmail.com",
     "image": "https://www.jsaenterpriseschennai.com/images/og-image.webp",
-    "priceRange": "Content Required From Client",
+    "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Content Required From Client",
+      "streetAddress": "Chennai",
       "addressLocality": areaName || "Chennai",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "Content Required From Client",
+      "postalCode": "600001",
       "addressCountry": "IN",
     },
     "geo": {

@@ -9,16 +9,19 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -82,12 +85,13 @@ export default function RootLayout({
     "telephone": "+91 77026 94269",
     "email": "info.jsaenterprises@gmail.com",
     "image": "https://www.jsaenterpriseschennai.com/images/og-image.webp",
+    "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Content Required From Client",
+      "streetAddress": "Chennai",
       "addressLocality": "Chennai",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "Content Required From Client",
+      "postalCode": "600001",
       "addressCountry": "IN",
     },
     "geo": {
@@ -158,7 +162,7 @@ export default function RootLayout({
         </Script>
 
         {/* Google Tag Manager (GTM) placeholder */}
-        <Script id="gtm" strategy="afterInteractive">
+        <Script id="gtm" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -169,7 +173,7 @@ export default function RootLayout({
         </Script>
 
         {/* Microsoft Clarity placeholder */}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

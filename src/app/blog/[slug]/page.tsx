@@ -30,6 +30,26 @@ export async function generateMetadata({ params }: PageProps) {
     alternates: {
       canonical: `/blog/${resolvedParams.slug}`,
     },
+    openGraph: {
+      title: post.title,
+      description: post.summary,
+      url: `https://www.jsaenterpriseschennai.com/blog/${resolvedParams.slug}`,
+      images: [
+        {
+          url: post.image,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [post.image],
+    },
   };
 }
 
