@@ -46,7 +46,7 @@ export default function BeforeAfter() {
             </div>
             <div className="p-6">
               <h3 className="text-base font-bold text-slate-800 mb-2">Before Installation</h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
                 Balcony exposed to bird nesting, pigeon droppings, and dangerous open hazards for children, pets, or falling objects.
               </p>
             </div>

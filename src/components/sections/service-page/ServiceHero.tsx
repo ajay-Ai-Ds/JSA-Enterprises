@@ -26,8 +26,9 @@ export function ServiceHero({ name, categoryName, title, subtitle, aiOverview, i
           fill
           priority
           sizes="100vw"
-          className="object-cover filter brightness-[0.25]"
+          className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/75" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

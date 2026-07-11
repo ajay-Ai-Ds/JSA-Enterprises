@@ -29,13 +29,13 @@ export default function ThankYouPage() {
           </h2>
         </div>
 
-        <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+        <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
           Thank you for contacting JSA Enterprises. Our local Chennai team will review your service requirements and contact you within 24 hours to schedule your free site inspection.
         </p>
 
         {/* Back channels */}
         <div className="flex flex-col gap-3 w-full border-t border-slate-100 pt-6">
-          <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
+          <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">
             Need Instant Booking?
           </span>
           <div className="grid grid-cols-2 gap-3">

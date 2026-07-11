@@ -199,8 +199,9 @@ export default function HeroCarousel() {
                 fill
                 priority={idx === 1}
                 sizes="100vw"
-                className="object-cover object-center filter brightness-[0.4]"
+                className="object-cover object-center"
               />
+              <div className="absolute inset-0 bg-black/60" />
             </div>
           </div>
         ))}

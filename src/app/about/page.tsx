@@ -33,7 +33,7 @@ export default function AboutPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -115,28 +115,28 @@ export default function AboutPage() {
             {/* Factual Data placeholders */}
             <div className="flex flex-col gap-5 text-left">
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Years in Business</span>
+                <span className="text-[10px] uppercase font-bold text-slate-500">Years in Business</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
                   Content Required From Client
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Completed Installations</span>
+                <span className="text-[10px] uppercase font-bold text-slate-500">Completed Installations</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
                   Content Required From Client
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-400">Certifications & Licenses</span>
+                <span className="text-[10px] uppercase font-bold text-slate-500">Certifications & Licenses</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
                   Content Required From Client
                 </span>
               </div>
             </div>
 
-            <p className="text-slate-400 text-[10px] leading-relaxed pt-2 border-t border-white/10">
+            <p className="text-slate-500 text-[10px] leading-relaxed pt-2 border-t border-white/10">
               JSA Enterprises maintains strict compliance standards. All ratings, years of operation, and structural safety certs will be published once the client submits certified copies.
             </p>
           </div>

@@ -35,7 +35,7 @@ export default function ShareButtons({ title, slug }: ShareButtonsProps) {
 
   return (
     <div className="flex flex-col gap-3 py-6 border-t border-b border-slate-200">
-      <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider flex items-center gap-1.5">
+      <span className="text-[10px] uppercase font-bold text-slate-500 tracking-wider flex items-center gap-1.5">
         <Share2 className="w-3.5 h-3.5" />
         <span>Share This Article</span>
       </span>

@@ -53,7 +53,7 @@ export function ServiceTimeline() {
               <h3 className="text-sm font-bold text-slate-800 mb-2 group-hover:text-accent-orange transition-colors">
                 {step.title}
               </h3>
-              <p className="text-slate-400 text-[11px] leading-relaxed max-w-[150px]">
+              <p className="text-slate-500 text-[11px] leading-relaxed max-w-[150px]">
                 {step.desc}
               </p>
             </motion.div>
@@ -98,7 +98,7 @@ export function ServiceWhyChoose() {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-sm font-bold text-slate-800">{card.label}</h3>
-                <p className="text-slate-400 text-xs leading-relaxed">{card.desc}</p>
+                <p className="text-slate-500 text-xs leading-relaxed">{card.desc}</p>
               </div>
             </div>
           ))}
@@ -143,11 +143,11 @@ export function ServiceRelated({ related, categoryName }: RelatedProps) {
                     <span className="text-xs font-bold text-slate-800 group-hover:text-accent-orange transition-colors">
                       {service.name}
                     </span>
-                    <span className="text-[10px] text-slate-400 font-medium">
+                    <span className="text-[10px] text-slate-500 font-medium">
                       Professional Installation Chennai
                     </span>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 group-hover:text-accent-orange transition-all" />
+                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:translate-x-1 group-hover:text-accent-orange transition-all" />
                 </Link>
               ))}
             </div>
@@ -260,7 +260,7 @@ export function ServiceFAQs({ faqs, serviceName }: FAQsProps) {
                   className="w-full flex items-center justify-between p-5 text-left cursor-pointer focus:outline-hidden"
                 >
                   <span className="flex items-start gap-3.5 text-sm sm:text-base font-bold text-slate-800 hover:text-accent-orange transition-colors">
-                    <HelpCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
+                    <HelpCircle className="w-5 h-5 text-slate-500 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </span>
                   <span className="p-1.5 bg-slate-100 rounded-lg text-slate-500 shrink-0 ml-4">

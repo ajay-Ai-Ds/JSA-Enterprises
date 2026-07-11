@@ -9,7 +9,7 @@ interface LogoProps {
 
 export default function Logo({ className = "", iconOnly = false, light = false }: LogoProps) {
   return (
-    <Link href="/" className={`flex items-center gap-3 select-none group ${className}`}>
+    <Link href="/" className={`flex items-center gap-3 select-none group ${className}`} aria-label="JSA Enterprises Home">
       {/* JSA Enterprises Logo Icon */}
       <div className="relative flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden transition-transform duration-300 group-hover:scale-105">
         <Image

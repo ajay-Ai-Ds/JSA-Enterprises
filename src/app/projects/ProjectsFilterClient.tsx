@@ -40,7 +40,7 @@ export default function ProjectsFilterClient() {
       <div className="flex flex-col md:flex-row gap-4 items-center justify-between bg-white p-5 rounded-3xl border border-slate-200 shadow-xs">
         {/* Search */}
         <div className="relative w-full md:w-80">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
           <input
             type="text"
             placeholder="Search by area or service..."
@@ -105,14 +105,14 @@ export default function ProjectsFilterClient() {
 
               {/* Body */}
               <div className="p-6 flex flex-col flex-grow">
-                <div className="flex flex-wrap items-center gap-3 mb-3 text-[10px] sm:text-xs text-slate-400 font-semibold uppercase">
+                <div className="flex flex-wrap items-center gap-3 mb-3 text-[10px] sm:text-xs text-slate-500 font-semibold uppercase">
                   <span className="flex items-center gap-1">
                     <MapPin className="w-3.5 h-3.5 text-accent-orange shrink-0" />
                     <span>{project.location}</span>
                   </span>
                   <span>•</span>
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                    <Calendar className="w-3.5 h-3.5 text-slate-500 shrink-0" />
                     {project.date === "Content Required From Client" ? (
                       <span className="text-accent-orange font-bold uppercase tracking-wider text-[9px] px-1.5 py-0.5 bg-orange-50 rounded-sm leading-none border border-orange-100/50">
                         Pending Client Data

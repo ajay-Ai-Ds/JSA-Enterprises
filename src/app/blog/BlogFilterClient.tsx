@@ -36,7 +36,7 @@ export default function BlogFilterClient({ initialPosts }: BlogFilterClientProps
       <div className="flex flex-col md:flex-row gap-4 items-center justify-between bg-white p-5 rounded-3xl border border-slate-200 shadow-xs">
         {/* Search */}
         <div className="relative w-full md:w-80">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
           <input
             type="text"
             placeholder="Search safety guides..."
@@ -98,7 +98,7 @@ export default function BlogFilterClient({ initialPosts }: BlogFilterClientProps
 
               {/* Body */}
               <div className="p-6 flex flex-col flex-grow text-left">
-                <div className="flex items-center gap-3.5 text-[10px] sm:text-xs text-slate-400 font-bold uppercase mb-3">
+                <div className="flex items-center gap-3.5 text-[10px] sm:text-xs text-slate-500 font-bold uppercase mb-3">
                   <span className="bg-orange-50 text-accent-orange px-2.5 py-1 rounded-sm border border-orange-100">
                     {post.categoryLabel}
                   </span>
@@ -116,7 +116,7 @@ export default function BlogFilterClient({ initialPosts }: BlogFilterClientProps
                 </p>
 
                 {/* Footer Metadata */}
-                <div className="flex items-center justify-between pt-4 border-t border-slate-50 mt-auto text-[10px] sm:text-xs text-slate-400 font-semibold uppercase">
+                <div className="flex items-center justify-between pt-4 border-t border-slate-50 mt-auto text-[10px] sm:text-xs text-slate-500 font-semibold uppercase">
                   <span className="flex items-center gap-1">
                     <User className="w-3.5 h-3.5" />
                     <span>{post.author}</span>

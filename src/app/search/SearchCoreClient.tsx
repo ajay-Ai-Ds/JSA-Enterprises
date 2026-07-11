@@ -117,7 +117,7 @@ export default function SearchCoreClient() {
       case "blog":
         return <FileText className="w-4 h-4 text-purple-500 shrink-0 mt-0.5" />;
       default:
-        return <HelpCircle className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />;
+        return <HelpCircle className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />;
     }
   };
 
@@ -136,7 +136,7 @@ export default function SearchCoreClient() {
           onChange={(e) => setQuery(e.target.value)}
           className="w-full bg-white border border-slate-250 focus:border-accent-orange px-12 py-4 rounded-2xl text-sm sm:text-base focus:outline-hidden focus:ring-2 focus:ring-accent-orange/10 shadow-xs"
         />
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none" />
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500 pointer-events-none" />
         <button
           type="submit"
           className="absolute right-3 top-1/2 -translate-y-1/2 bg-primary-700 hover:bg-accent-orange text-white text-xs font-bold px-4.5 py-2.5 rounded-xl cursor-pointer transition-colors shadow-sm"
@@ -148,13 +148,13 @@ export default function SearchCoreClient() {
       {/* Results */}
       {activeQuery && (
         <div className="flex flex-col gap-4 text-left">
-          <p className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-wider">
+          <p className="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider">
             Showing {results.length} results for &ldquo;{activeQuery}&rdquo;
           </p>
 
           {results.length === 0 ? (
             <div className="bg-white rounded-3xl p-10 border border-slate-200 text-center flex flex-col items-center gap-3">
-              <span className="text-slate-400 font-semibold text-sm">No results match your search parameters.</span>
+              <span className="text-slate-500 font-semibold text-sm">No results match your search parameters.</span>
               <p className="text-slate-500 text-xs leading-relaxed max-w-sm">
                 Try searching for general keywords like &ldquo;balcony&rdquo;, &ldquo;invisible&rdquo;, &ldquo;OMR&rdquo;, or &ldquo;price&rdquo; to find listings.
               </p>
@@ -183,7 +183,7 @@ export default function SearchCoreClient() {
                     </p>
                   </div>
 
-                  <div className="flex items-center self-center shrink-0 text-slate-400 group-hover:text-accent-orange group-hover:translate-x-0.5 transition-all">
+                  <div className="flex items-center self-center shrink-0 text-slate-500 group-hover:text-accent-orange group-hover:translate-x-0.5 transition-all">
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>

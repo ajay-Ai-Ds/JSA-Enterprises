@@ -115,7 +115,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -139,19 +139,19 @@ export default async function BlogDetailPage({ params }: PageProps) {
             {post.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 font-bold uppercase pt-1">
+          <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 font-bold uppercase pt-1">
             <span className="flex items-center gap-1.5 text-slate-500">
-              <User className="w-4 h-4 text-slate-400" />
+              <User className="w-4 h-4 text-slate-500" />
               <span>{post.author}</span>
             </span>
             <span>•</span>
             <span className="flex items-center gap-1.5 text-slate-500">
-              <Calendar className="w-4 h-4 text-slate-400" />
+              <Calendar className="w-4 h-4 text-slate-500" />
               <span>{post.publishedAt}</span>
             </span>
             <span>•</span>
             <span className="flex items-center gap-1.5 text-slate-500">
-              <Clock className="w-4 h-4 text-slate-400" />
+              <Clock className="w-4 h-4 text-slate-500" />
               <span>{post.readingTime}</span>
             </span>
           </div>
@@ -177,10 +177,10 @@ export default async function BlogDetailPage({ params }: PageProps) {
             <div className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xs flex flex-col gap-8">
               {/* Dynamic Table of Contents */}
               <div className="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-3">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+                <h2 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
                   <BookOpen className="w-4 h-4 text-accent-orange" />
                   <span>Table of Contents</span>
-                </h3>
+                </h2>
                 <ul className="space-y-2 text-xs sm:text-sm text-primary-700 font-bold">
                   {post.contentBlocks.map((block: any, i: number) => {
                     const anchorId = `section-${i}`;
@@ -247,9 +247,9 @@ export default async function BlogDetailPage({ params }: PageProps) {
                   href={`/blog/${prevPost.slug}`}
                   className="flex items-center gap-3 p-4 bg-white hover:bg-orange-50 border border-slate-200 rounded-2xl hover:border-accent-orange/20 text-left group"
                 >
-                  <ArrowLeft className="w-4 h-4 text-slate-400 group-hover:-translate-x-1 transition-transform" />
+                  <ArrowLeft className="w-4 h-4 text-slate-500 group-hover:-translate-x-1 transition-transform" />
                   <div className="flex flex-col gap-0.5 truncate">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Previous</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-500">Previous</span>
                     <span className="text-xs font-bold text-slate-700 group-hover:text-accent-orange transition-colors truncate">
                       {prevPost.title}
                     </span>
@@ -265,12 +265,12 @@ export default async function BlogDetailPage({ params }: PageProps) {
                   className="flex items-center justify-between p-4 bg-white hover:bg-orange-50 border border-slate-200 rounded-2xl hover:border-accent-orange/20 text-right group"
                 >
                   <div className="flex flex-col gap-0.5 truncate text-right w-full">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Next</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-500">Next</span>
                     <span className="text-xs font-bold text-slate-700 group-hover:text-accent-orange transition-colors truncate block">
                       {nextPost.title}
                     </span>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform shrink-0 ml-3" />
+                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:translate-x-1 transition-transform shrink-0 ml-3" />
                 </Link>
               ) : (
                 <div className="bg-slate-100 rounded-2xl p-4 opacity-40 select-none"></div>
@@ -295,7 +295,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                     <span className="text-xs font-bold text-slate-700 group-hover:text-accent-orange transition-colors truncate">
                       {service.name}
                     </span>
-                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:translate-x-0.5 group-hover:text-accent-orange transition-all" />
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:translate-x-0.5 group-hover:text-accent-orange transition-all" />
                   </Link>
                 ))}
               </div>
@@ -335,7 +335,7 @@ export default async function BlogDetailPage({ params }: PageProps) {
                       <span className="text-xs font-bold text-slate-850 group-hover:text-accent-orange transition-colors leading-snug line-clamp-2">
                         {blog.title}
                       </span>
-                      <span className="text-[10px] text-slate-400 uppercase font-semibold">
+                      <span className="text-[10px] text-slate-500 uppercase font-semibold">
                         {blog.publishedAt}
                       </span>
                     </Link>

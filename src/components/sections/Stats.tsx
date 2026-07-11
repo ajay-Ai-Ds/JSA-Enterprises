@@ -51,13 +51,13 @@ export default function Stats() {
               <div className="p-3 bg-white rounded-xl shadow-xs mb-4">
                 {stat.icon}
               </div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-2">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-500 mb-2">
                 {stat.label}
-              </h3>
+              </h2>
               <p className="text-lg font-bold text-slate-800 mb-2 px-2 py-1 bg-white border border-dashed border-slate-300 rounded-md inline-block max-w-full truncate">
                 {stat.value}
               </p>
-              <p className="text-xs text-slate-400 mt-1 leading-relaxed">
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                 {stat.description}
               </p>
             </motion.div>

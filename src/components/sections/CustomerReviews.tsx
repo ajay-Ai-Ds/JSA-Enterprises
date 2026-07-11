@@ -27,7 +27,7 @@ export default function CustomerReviews() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto bg-slate-50 rounded-3xl p-8 sm:p-12 border border-dashed border-slate-300 text-center flex flex-col items-center gap-5"
         >
-          <div className="p-4 bg-white rounded-full shadow-xs text-slate-400">
+          <div className="p-4 bg-white rounded-full shadow-xs text-slate-500">
             <MessageSquare className="w-10 h-10" />
           </div>
 
@@ -43,7 +43,7 @@ export default function CustomerReviews() {
             Content Required From Client
           </p>
 
-          <p className="text-xs text-slate-400 leading-relaxed max-w-md">
+          <p className="text-xs text-slate-500 leading-relaxed max-w-md">
             This section is reserved for real reviews from JSA Enterprises customer database. Ratings and testimonials will be populated as soon as verified client logs are shared.
           </p>
         </motion.div>

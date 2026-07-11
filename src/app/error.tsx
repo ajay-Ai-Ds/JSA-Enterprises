@@ -24,7 +24,7 @@ export default function ErrorBoundary({
 
         <div className="flex flex-col gap-2">
           <h2 className="text-lg font-bold text-slate-700">Something Went Wrong</h2>
-          <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+          <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
             An unexpected error occurred during rendering. Our safety system captured it safely. Please click below to try loading again.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function ErrorBoundary({
           
           <a
             href="/"
-            className="text-xs text-slate-400 hover:text-accent-orange font-semibold transition-colors"
+            className="text-xs text-slate-500 hover:text-accent-orange font-semibold transition-colors"
           >
             Go Back Home
           </a>

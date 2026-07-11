@@ -181,7 +181,7 @@ export default function GalleryFilterClient() {
 
             {/* Meta Footer */}
             <div className="p-5 border-t border-slate-100">
-              <div className="flex items-center gap-1.5 text-[10px] sm:text-xs text-slate-400 font-bold uppercase mb-1.5">
+              <div className="flex items-center gap-1.5 text-[10px] sm:text-xs text-slate-500 font-bold uppercase mb-1.5">
                 <MapPin className="w-3.5 h-3.5 text-accent-orange" />
                 <span>{photo.location}</span>
               </div>

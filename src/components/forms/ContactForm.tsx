@@ -123,7 +123,7 @@ export default function ContactForm() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">
+                  <span className="text-[10px] uppercase font-bold text-slate-500 block tracking-wider">
                     Quick Call Booking
                   </span>
                   <span className="text-base font-extrabold text-slate-800 group-hover:text-accent-orange transition-colors">
@@ -140,7 +140,7 @@ export default function ContactForm() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">
+                  <span className="text-[10px] uppercase font-bold text-slate-500 block tracking-wider">
                     Email Support
                   </span>
                   <span className="text-base font-extrabold text-slate-800 group-hover:text-primary-700 transition-colors">

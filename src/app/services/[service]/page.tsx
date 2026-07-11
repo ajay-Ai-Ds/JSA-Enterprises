@@ -123,7 +123,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Localized Breadcrumb */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-6" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>

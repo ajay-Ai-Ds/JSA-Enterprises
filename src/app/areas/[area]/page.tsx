@@ -116,7 +116,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation UI */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -253,7 +253,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
                     <span className="text-xs font-bold text-slate-700 group-hover:text-accent-orange transition-colors truncate">
                       {service.name}
                     </span>
-                    <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:translate-x-0.5 group-hover:text-accent-orange transition-all" />
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:translate-x-0.5 group-hover:text-accent-orange transition-all" />
                   </Link>
                 ))}
               </div>

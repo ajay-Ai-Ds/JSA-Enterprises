@@ -1,16 +1,18 @@
+import dynamic from "next/dynamic";
 import HeroCarousel from "@/components/sections/HeroCarousel";
 import Stats from "@/components/sections/Stats";
 import ServiceCategories from "@/components/sections/ServiceCategories";
-import FeaturedServices from "@/components/sections/FeaturedServices";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import InstallationProcess from "@/components/sections/InstallationProcess";
-import Materials from "@/components/sections/Materials";
-import BeforeAfter from "@/components/sections/BeforeAfter";
-import Team from "@/components/sections/Team";
-import ServiceAreas from "@/components/sections/ServiceAreas";
-import CustomerReviews from "@/components/sections/CustomerReviews";
-import FAQAccordion from "@/components/sections/FAQAccordion";
-import ContactForm from "@/components/forms/ContactForm";
+
+const FeaturedServices = dynamic(() => import("@/components/sections/FeaturedServices"));
+const WhyChooseUs = dynamic(() => import("@/components/sections/WhyChooseUs"));
+const InstallationProcess = dynamic(() => import("@/components/sections/InstallationProcess"));
+const Materials = dynamic(() => import("@/components/sections/Materials"));
+const BeforeAfter = dynamic(() => import("@/components/sections/BeforeAfter"));
+const Team = dynamic(() => import("@/components/sections/Team"));
+const ServiceAreas = dynamic(() => import("@/components/sections/ServiceAreas"));
+const CustomerReviews = dynamic(() => import("@/components/sections/CustomerReviews"));
+const FAQAccordion = dynamic(() => import("@/components/sections/FAQAccordion"));
+const ContactForm = dynamic(() => import("@/components/forms/ContactForm"));
 
 export default function Home() {
   // SearchAction Schema for sitelink search box

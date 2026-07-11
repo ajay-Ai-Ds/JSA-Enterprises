@@ -30,7 +30,7 @@ export default function AreasPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs Navigation */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -71,7 +71,7 @@ export default function AreasPage() {
                     href={`/areas/${slug}`}
                     className="flex items-center gap-2.5 p-3.5 bg-slate-50 hover:bg-orange-50 border border-slate-100 hover:border-accent-orange/30 rounded-xl transition-all group"
                   >
-                    <MapPin className="w-4 h-4 text-slate-400 group-hover:text-accent-orange shrink-0 transition-colors" />
+                    <MapPin className="w-4 h-4 text-slate-500 group-hover:text-accent-orange shrink-0 transition-colors" />
                     <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-slate-900 truncate">
                       {areaName}
                     </span>

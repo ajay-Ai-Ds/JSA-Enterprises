@@ -36,7 +36,7 @@ export function ServiceAbout({ name, longDescription, benefits }: AboutProps) {
                   <ShieldAlert className="w-4.5 h-4.5 text-accent-orange" />
                   <span>Who Needs It?</span>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">
+                <p className="text-slate-500 text-xs leading-relaxed">
                   Apartments above the 2nd floor, families with active kids, pet owners, and coastal properties seeking zero-blockage safety solutions.
                 </p>
               </div>
@@ -46,7 +46,7 @@ export function ServiceAbout({ name, longDescription, benefits }: AboutProps) {
                   <Settings className="w-4.5 h-4.5 text-accent-orange" />
                   <span>Maintenance & Safety</span>
                 </div>
-                <p className="text-slate-400 text-xs leading-relaxed">
+                <p className="text-slate-500 text-xs leading-relaxed">
                   Engineered with zero-corrosion UV stabilized materials. Cleans easily with a damp micro cloth. Check tension boundaries every 12 months.
                 </p>
               </div>
@@ -171,7 +171,7 @@ export function ServiceBenefits({ benefits }: BenefitsProps) {
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3 className="text-sm font-bold text-slate-800">{benefit}</h3>
-                <p className="text-slate-400 text-xs leading-relaxed">
+                <p className="text-slate-500 text-xs leading-relaxed">
                   Engineered with premium quality standards to safeguard families, children, and properties securely.
                 </p>
               </div>

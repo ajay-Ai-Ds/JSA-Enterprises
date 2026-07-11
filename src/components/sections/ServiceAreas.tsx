@@ -58,14 +58,14 @@ export default function ServiceAreas() {
                   transition={{ duration: 0.3, delay: index * 0.03 }}
                   className="flex items-center gap-2.5 p-3.5 bg-slate-50 hover:bg-orange-50/50 hover:border-accent-orange/30 border border-slate-100 rounded-xl transition-all group cursor-default"
                 >
-                  <MapPin className="w-4 h-4 text-slate-400 group-hover:text-accent-orange shrink-0 transition-colors" />
+                  <MapPin className="w-4 h-4 text-slate-500 group-hover:text-accent-orange shrink-0 transition-colors" />
                   <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-slate-900 transition-colors truncate">
                     {area}
                   </span>
                 </motion.div>
               ))}
             </div>
-            <p className="text-[11px] text-slate-400 text-center mt-8 font-medium">
+            <p className="text-[11px] text-slate-500 text-center mt-8 font-medium">
               Don&apos;t see your area? We service all locations in and around the Chennai metropolitan region. Contact support to confirm.
             </p>
           </div>

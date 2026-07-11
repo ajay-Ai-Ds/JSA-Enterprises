@@ -99,7 +99,7 @@ export default function FAQAccordion() {
                   className="w-full flex items-center justify-between p-5 sm:p-6 text-left cursor-pointer focus:outline-hidden"
                 >
                   <span className="flex items-start gap-3.5 text-sm sm:text-base font-bold text-slate-800 hover:text-accent-orange transition-colors">
-                    <HelpCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
+                    <HelpCircle className="w-5 h-5 text-slate-500 shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </span>
                   <span className="p-1.5 bg-slate-100 rounded-lg text-slate-500 shrink-0 ml-4 group">

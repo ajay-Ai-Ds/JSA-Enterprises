@@ -30,7 +30,7 @@ export default function SearchPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb Navigation */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -54,7 +54,7 @@ export default function SearchPage() {
           fallback={
             <div className="text-center py-12 select-none">
               <div className="w-8 h-8 border-2 border-slate-300 border-t-accent-orange rounded-full animate-spin mx-auto mb-3" />
-              <span className="text-xs font-bold text-slate-400">Loading indexes...</span>
+              <span className="text-xs font-bold text-slate-500">Loading indexes...</span>
             </div>
           }
         >

@@ -78,7 +78,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs Navigation */}
-        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-400 mb-8" aria-label="Breadcrumb">
+        <nav className="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-8" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-accent-orange flex items-center gap-1">
             <Home className="w-3.5 h-3.5" />
             <span>Home</span>
@@ -95,7 +95,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
         {/* Project Header Title */}
         <div className="flex flex-col gap-4 mb-10 text-left">
-          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400 font-bold uppercase">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 font-bold uppercase">
             <span className="bg-accent-orange text-white text-[10px] px-3 py-1 rounded-full">
               {project.serviceName}
             </span>
@@ -149,7 +149,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <div className="flex flex-col gap-3">
                 {project.specs.map((item, idx) => (
                   <div key={idx} className="flex justify-between items-center text-xs pb-2 border-b border-slate-100 last:border-0 last:pb-0">
-                    <span className="font-semibold text-slate-400 uppercase tracking-wider text-[10px]">{item.label}</span>
+                    <span className="font-semibold text-slate-500 uppercase tracking-wider text-[10px]">{item.label}</span>
                     <span className="font-bold text-slate-700">
                       {item.value === "Content Required From Client" ? (
                         <span className="text-accent-orange bg-orange-50 px-1.5 py-0.5 rounded-sm text-[9px] uppercase font-extrabold leading-none">
@@ -264,7 +264,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <span className="text-xs font-extrabold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1 rounded-md">
             Content Required From Client
           </span>
-          <p className="text-[10px] text-slate-400 leading-relaxed">
+          <p className="text-[10px] text-slate-500 leading-relaxed">
             Verified review logs for this project will be populated as soon as the client submits logs.
           </p>
         </div>

@@ -123,7 +123,7 @@ export default function WhyChooseUs() {
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-slate-800 mb-1">{benefit.title}</h3>
-                    <p className="text-slate-400 text-xs leading-relaxed">{benefit.description}</p>
+                    <p className="text-slate-500 text-xs leading-relaxed">{benefit.description}</p>
                   </div>
                 </motion.div>
               ))}

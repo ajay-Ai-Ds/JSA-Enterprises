@@ -29,7 +29,7 @@ export default function SearchBar() {
         onChange={(e) => setQuery(e.target.value)}
         className="w-full bg-slate-100 hover:bg-slate-200/60 border border-slate-200 focus:bg-white focus:border-accent-orange text-slate-800 text-xs px-9 py-2.5 rounded-full focus:outline-hidden transition-all duration-200"
       />
-      <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
+      <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-500 pointer-events-none" />
       <button type="submit" className="sr-only">
         Search
       </button>

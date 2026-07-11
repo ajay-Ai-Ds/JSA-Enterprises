@@ -44,11 +44,11 @@ export default function Navbar() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-primary-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2">
           <div className="flex items-center gap-6 text-[11px] sm:text-xs font-medium">
-            <a href="tel:+917702694269" className="flex items-center gap-1.5 hover:text-accent-orange transition-colors">
+            <a href="tel:+917702694269" className="flex items-center gap-1.5 hover:text-accent-orange transition-colors" aria-label="Call Us">
               <Phone className="w-3 h-3" />
               <span>+91 77026 94269</span>
             </a>
-            <a href="mailto:info.jsaenterprises@gmail.com" className="hidden sm:flex items-center gap-1.5 hover:text-accent-orange transition-colors">
+            <a href="mailto:info.jsaenterprises@gmail.com" className="hidden sm:flex items-center gap-1.5 hover:text-accent-orange transition-colors" aria-label="Email Us">
               <Mail className="w-3 h-3" />
               <span>info.jsaenterprises@gmail.com</span>
             </a>
@@ -59,6 +59,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-accent-orange transition-colors"
+              aria-label="WhatsApp Chat"
             >
               <MessageSquare className="w-3 h-3" />
               <span className="hidden sm:inline">WhatsApp Chat</span>

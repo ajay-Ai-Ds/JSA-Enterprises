@@ -16,7 +16,7 @@ export default function NotFound() {
           <h2 className="text-lg font-bold text-slate-700">Safety Net Breach: Page Not Found</h2>
         </div>
 
-        <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
+        <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">
           The safety netting route you are looking for has been moved or doesn&apos;t exist. Let&apos;s guide you back to secure ground.
         </p>
 
