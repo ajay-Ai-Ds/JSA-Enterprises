@@ -644,11 +644,50 @@ const imageOverrides: Record<string, string> = {
   "balcony-cloth-hangers": "/images/hero/cloth-hanger2.webp",
 };
 
+const categoryImages = {
+  "safety-nets": [
+    "/images/hero/safetynets.webp",
+    "/images/hero/safetynets2.jpg",
+    "/images/hero/team-net-install.png",
+    "/images/hero/childrensafetynet.webp",
+    "/images/hero/pigeonnet.jpg",
+    "/images/hero/balconysafetynet.jpg"
+  ],
+  "invisible-grills": [
+    "/images/hero/customgrill.jpg",
+    "/images/hero/invisible-grill.png",
+    "/images/hero/team-grill-install.png",
+    "/images/hero/balconygrill.jpg",
+    "/images/hero/windowgrill.webp",
+    "/images/hero/childrensafetygrill.jpg"
+  ],
+  "cloth-hangers": [
+    "/images/hero/cloth-hanger.png",
+    "/images/hero/team-hanger-install.png",
+    "/images/hero/cloth-hanger1.jpg",
+    "/images/hero/cloth-hanger2.webp",
+    "/images/hero/cloth-hanger.png",
+    "/images/hero/cloth-hanger1.jpg"
+  ]
+};
+
 Object.keys(servicesData).forEach((slug) => {
   const service = servicesData[slug];
   const overrideImage = imageOverrides[slug];
+  
   if (overrideImage) {
     service.image = overrideImage;
     service.afterImage = overrideImage;
+    service.beforeImage = overrideImage;
   }
+  
+  const cats = categoryImages[service.category as keyof typeof categoryImages] || [];
+  const galleryImgs = overrideImage ? [overrideImage, ...cats.filter(img => img !== overrideImage)] : cats;
+  
+  while(galleryImgs.length < 6) {
+    galleryImgs.push(cats[0] || overrideImage || "");
+  }
+  
+  service.supportingImages = galleryImgs.slice(0, 4);
+  service.gallery = galleryImgs.slice(0, 6);
 });
