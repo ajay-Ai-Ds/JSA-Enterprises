@@ -47,7 +47,7 @@ export default function ThankYouPage() {
               <span>Call Us</span>
             </a>
             <a
-              href="https://wa.me/917702694269"
+              href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
               className="flex items-center justify-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-250 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer"
             >
               <MessageSquare className="w-3.5 h-3.5 fill-current" />

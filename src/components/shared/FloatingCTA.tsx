@@ -62,7 +62,7 @@ export default function FloatingCTA() {
 
           {/* WhatsApp Button (Success Green) */}
           <motion.a
-            href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I%2520would%20like%20to%20get%20a%20free%20quote%20for%2520safety%2520nets/invisible%2520grills."
+            href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ scale: 0, opacity: 0 }}

@@ -167,7 +167,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
                 <span>Call Now</span>
               </a>
               <a
-                href={`https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I'm%20looking%20for%20safety%20nets%20in%20${encodeURIComponent(areaDetail.name)}.`}
+                href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center justify-center gap-2 bg-emerald-600 text-white font-bold px-5 py-3 rounded-full hover:bg-emerald-700 text-xs shadow-xs"

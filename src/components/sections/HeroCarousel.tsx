@@ -247,7 +247,7 @@ export default function HeroCarousel() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I%20would%20like%20to%20request%20a%20free%20site%20visit."
+                  href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2.5 bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"

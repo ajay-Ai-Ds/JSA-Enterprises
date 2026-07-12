@@ -55,7 +55,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-4 text-[11px] sm:text-xs font-medium">
             <a
-              href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I'm%20interested%20in%20your%20services."
+              href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-accent-orange transition-colors"
@@ -111,7 +111,7 @@ export default function Navbar() {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I'm%20interested%20in%20your%20services."
+                href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center p-2 text-success-green hover:bg-emerald-50 rounded-full transition-colors duration-200"
@@ -215,7 +215,7 @@ export default function Navbar() {
                   <span>Call: +91 77026 94269</span>
                 </a>
                 <a
-                  href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises,%20I'm%20interested%20in%20your%20services."
+                  href="https://wa.me/917702694269?text=Hi%20JSA%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-3 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold py-3.5 rounded-xl transition-colors text-sm"
