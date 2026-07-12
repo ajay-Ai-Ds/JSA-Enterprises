@@ -33,10 +33,10 @@ export function generateLocalBusinessSchema(areaName?: string) {
     "priceRange": "₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Chennai",
+      "streetAddress": "17/7, Rajeswari St, Kamarajar Nagar, NGO Colony, Choolaimedu",
       "addressLocality": areaName || "Chennai",
       "addressRegion": "Tamil Nadu",
-      "postalCode": "600001",
+      "postalCode": "600094",
       "addressCountry": "IN",
     },
     "geo": {

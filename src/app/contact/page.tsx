@@ -66,8 +66,9 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-accent-orange shrink-0 mt-0.5" />
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] uppercase font-bold text-slate-500">Head Office Address</span>
-                  <span className="text-xs font-extrabold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-2 py-0.5 rounded-md self-start">
-                    Content Required From Client
+                  <span className="text-sm font-bold text-slate-700 mt-1">
+                    17/7, Rajeswari St, Kamarajar Nagar, NGO Colony,<br />
+                    Choolaimedu, Chennai, Tamil Nadu 600094
                   </span>
                 </div>
               </div>

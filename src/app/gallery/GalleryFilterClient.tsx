@@ -17,7 +17,7 @@ interface GalleryPhoto {
 
 const galleryData: GalleryPhoto[] = [
   {
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/balconysafetynet.jpg",
     category: "apartment",
     categoryLabel: "Apartment Installations",
     location: "Adyar, Chennai",
@@ -25,7 +25,7 @@ const galleryData: GalleryPhoto[] = [
     description: "High-rise balcony safety netting installed securely across concrete pillars.",
   },
   {
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/balconygrill.jpg",
     category: "invisible-grills",
     categoryLabel: "Invisible Grills",
     location: "OMR, Chennai",
@@ -33,7 +33,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Elegant SS316 steel wire invisible grills offering panoramic views.",
   },
   {
-    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/cloth-hanger.png",
     category: "cloth-hangers",
     categoryLabel: "Cloth Hangers",
     location: "Velachery, Chennai",
@@ -41,7 +41,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Dual-pipe ceiling pulley hanger system drying clothes space-efficiently.",
   },
   {
-    image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/team-net-install.png",
     category: "team",
     categoryLabel: "Team",
     location: "T. Nagar, Chennai",
@@ -49,7 +49,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Insured field technicians securing brackets at high floor structures.",
   },
   {
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/safetynets.webp",
     category: "materials",
     categoryLabel: "Materials",
     location: "Chennai Hub",
@@ -57,7 +57,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Close-up of UV-stabilized double-locked HDPE safety netting mesh.",
   },
   {
-    image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/cricketpracticenet.jpg",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
     location: "Tambaram, Chennai",
@@ -65,7 +65,7 @@ const galleryData: GalleryPhoto[] = [
     description: " Cricket practice pitches netting boundary cage installation.",
   },
   {
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/childrensafetynet.webp",
     category: "apartment",
     categoryLabel: "Apartment Installations",
     location: "Anna Nagar, Chennai",
@@ -73,7 +73,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Reinforced kid-safe boundary mesh tied securely around open railings.",
   },
   {
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/windowgrill.webp",
     category: "invisible-grills",
     categoryLabel: "Invisible Grills",
     location: "Nungambakkam, Chennai",
@@ -81,7 +81,7 @@ const galleryData: GalleryPhoto[] = [
     description: "SS316 safety wire grids replacing dark iron rods.",
   },
   {
-    image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/cloth-hanger1.jpg",
     category: "cloth-hangers",
     categoryLabel: "Cloth Hangers",
     location: "Porur, Chennai",
@@ -89,7 +89,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Folding accordion-style wall hangers collapsing flat against the frames.",
   },
   {
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/constructionnet.webp",
     category: "projects",
     categoryLabel: "Projects",
     location: "ECR, Chennai",
@@ -97,7 +97,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Heavy-duty fall protection nets wrapped around concrete pillars.",
   },
   {
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80",
+    image: "/images/hero/ductarea.webp",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
     location: "Sholinganallur, Chennai",
@@ -105,12 +105,12 @@ const galleryData: GalleryPhoto[] = [
     description: "Open building duct ventilation shaft sealed cleanly to block birds.",
   },
   {
-    image: "https://images.unsplash.com/photo-1526344966-89049886b28d?auto=format&fit=crop&w=600&q=80",
-    category: "materials",
-    categoryLabel: "Materials",
+    image: "/images/hero/pigeonnet.jpg",
+    category: "safety-nets",
+    categoryLabel: "Safety Nets",
     location: "Chennai Hub",
-    serviceName: "Coconut Tree Nets",
-    description: "HDPE catchment netting secured around palm trees in residential paths.",
+    serviceName: "Anti-Bird Nets",
+    description: "Anti-bird netting secured around building exteriors to protect against pigeons.",
   },
 ];
 

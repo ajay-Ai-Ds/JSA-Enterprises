@@ -91,8 +91,9 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-accent-orange shrink-0 mt-1" />
                 <div>
                   <span className="font-semibold text-white block">Office Location</span>
-                  <span>Chennai, Tamil Nadu, India</span>
-                  <span className="block text-xs text-slate-500 mt-0.5">Content Required From Client (Full Address)</span>
+                  <span className="block text-sm text-slate-400 mt-1">
+                    17/7, Rajeswari St, Kamarajar Nagar, NGO Colony, Choolaimedu, Chennai, Tamil Nadu 600094
+                  </span>
                 </div>
               </li>
               <li className="flex items-center gap-3">
