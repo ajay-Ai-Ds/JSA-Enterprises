@@ -161,6 +161,31 @@ const localTraits: Record<string, { desc: string; housingType: string; localized
     housingType: "dense residential apartments and family layouts",
     localizedDetail: "Balcony safety nets are standard requirements here to safeguard children from railing slips.",
   },
+  "kodambakkam": {
+    desc: "Kodambakkam is a thriving residential and commercial neighborhood in Chennai, famous as the heart of the Tamil film industry.",
+    housingType: "mix of traditional houses and modern multi-story apartments",
+    localizedDetail: "With bustling streets and closely packed apartments, balcony safety nets are crucial for families with children.",
+  },
+  "k-k-nagar": {
+    desc: "K.K. Nagar is a well-planned residential neighborhood with wide roads, parks, and numerous apartment complexes.",
+    housingType: "planned residential complexes and multi-family apartments",
+    localizedDetail: "Large trees and parks attract birds, making pigeon exclusion nets a popular choice for balconies and windows.",
+  },
+  "ashok-nagar": {
+    desc: "Ashok Nagar is a central residential hub in Chennai known for its excellent connectivity and established housing layouts.",
+    housingType: "established family apartments and residential streets",
+    localizedDetail: "Many families opt for invisible grills to maintain unobstructed views of the tree-lined avenues while ensuring safety.",
+  },
+  "saidapet": {
+    desc: "Saidapet is one of Chennai's oldest residential areas, featuring a blend of traditional markets and new apartment buildings.",
+    housingType: "dense mix of traditional housing and new residential flats",
+    localizedDetail: "Space-saving ceiling cloth hangers are highly requested in these compact residential layouts.",
+  },
+  "thiruvanmiyur": {
+    desc: "Thiruvanmiyur is a coastal residential neighborhood in South Chennai, offering premium housing near the beach.",
+    housingType: "premium coastal apartments and residential layouts",
+    localizedDetail: "Exposure to sea breezes means SS316 marine-grade invisible grills are essential to prevent rust.",
+  },
 };
 
 // Master list of 30 Chennai areas

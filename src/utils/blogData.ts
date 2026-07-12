@@ -30,7 +30,7 @@ export const blogData: Record<string, BlogArticle> = {
     readingTime: "5 min read",
     category: "invisible-grills",
     categoryLabel: "Invisible Grills",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    image: "/images/hero/balconygrill.jpg",
     summary: "Curious about the price of invisible grills in Chennai? This guide outlines the key variables—including SS316 wire thickness, framing tracks, and local area installation costs—to help you plan.",
     introduction: "Modern high-rise apartments in Chennai are moving away from traditional, bulky iron window grills. In their place, sleek invisible grills made of high-tensile steel cables are rising in popularity. However, one of the first questions homeowners ask is about the pricing matrix.",
     contentBlocks: [
@@ -73,7 +73,7 @@ export const blogData: Record<string, BlogArticle> = {
     readingTime: "4 min read",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "/images/hero/balconysafetynet.jpg",
     summary: "A practical guide to choosing balcony safety netting materials, comparing HDPE monofilament and nylon, with details on pending pricing updates.",
     introduction: "Securing your balcony with safety netting is one of the most affordable ways to protect children and pets from high-rise falls. However, when researching online, pricing ranges can be confusing. Let's break down the material differences and what affects pricing.",
     contentBlocks: [
@@ -116,7 +116,7 @@ export const blogData: Record<string, BlogArticle> = {
     readingTime: "6 min read",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/hero/childrensafetynet.webp",
     summary: "Practical child safety guidelines for families residing in high-rise apartments. Discover crucial zones to secure, from railings to open duct openings.",
     introduction: "Living in a high-rise apartment on OMR or Anna Nagar offers stunning views and modern security, but raises safety concerns for families with active toddlers. Kids are naturally curious and fast, making open balcony rails and low window frames dangerous. Here is how to secure your home.",
     contentBlocks: [
@@ -159,7 +159,7 @@ export const blogData: Record<string, BlogArticle> = {
     readingTime: "5 min read",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
-    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    image: "/images/hero/pigeonnet.jpg",
     summary: "Tired of dealing with pigeon droppings and noise in your balcony? Learn how professional pigeon-exclusion netting helps reclaim clean air and health.",
     introduction: "Pigeons nesting in apartment balconies are more than just a noise nuisance. Their droppings contain pathogens that can lead to respiratory illnesses like histoplasmosis and psittacosis. Securing your balconies, windows, and duct areas with pigeon netting is an essential health check.",
     contentBlocks: [

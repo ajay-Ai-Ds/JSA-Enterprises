@@ -19,6 +19,15 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
+    image: "/images/hero/pigeonnet.jpg",
+    badge: "Pigeon Exclusion",
+    title: "100% Pigeon & Bird Proofing Balcony Nets",
+    subtitle: "Keep pigeons and birds away from nesting on your balcony. Elegant, durable, and transparent netting solutions.",
+    ctaText: "View Bird Netting",
+    ctaLink: "#services",
+  },
+  {
+    id: 2,
     image: "/images/hero/balconygrill.jpg",
     badge: "Architectural Elegance",
     title: "Elegant Invisible Grills for Windows & Balconies",
@@ -27,21 +36,12 @@ const slides: Slide[] = [
     ctaLink: "#services",
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/hero/cloth-hanger1.jpg",
     badge: "Space-Saving Innovation",
     title: "Premium Ceiling & Balcony Cloth Hangers",
     subtitle: "Maximize your living space with our smooth dual-pipe pulley drying system. Rust-proof stainless steel pipes engineered for absolute convenience.",
     ctaText: "Check Cloth Hangers",
-    ctaLink: "#services",
-  },
-  {
-    id: 3,
-    image: "/images/hero/pigeonnet.jpg",
-    badge: "Pigeon Exclusion",
-    title: "100% Pigeon & Bird Proofing Balcony Nets",
-    subtitle: "Keep pigeons and birds away from nesting on your balcony. Elegant, durable, and transparent netting solutions.",
-    ctaText: "View Bird Netting",
     ctaLink: "#services",
   },
   {

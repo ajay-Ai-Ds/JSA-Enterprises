@@ -22,6 +22,12 @@ const chennaiAreas = [
   "Perungudi",
   "Pallikaranai",
   "Guindy",
+  "Kodambakkam",
+  "K.K. Nagar",
+  "Ashok Nagar",
+  "Saidapet",
+  "Besant Nagar",
+  "Vadapalani",
 ];
 
 export default function ServiceAreas() {
