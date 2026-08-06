@@ -595,23 +595,23 @@ export const servicesData: Record<string, ServiceDetail> = {
     description: "Foldable wall-mounted drying systems and railing hooks for apartment balconies. Rustproof finishes.",
     longDescription: "Maximize your balcony utilities. Our wall-mounted balcony hangers fold flat against the wall when not in use. Engineered with premium anti-corrosive coatings to withstand maritime humidity.",
     aiOverview: "JSA Balcony Cloth Hangers provide space-efficient drying using wall-mounted accordion grids or railing hooks. Built with rustproof coated steel, they collapse flat to keep balcony spaces clean.",
-    image: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/main-images/balconyclothhangers.jpg",
     supportingImages: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80",
+      "/images/main-images/balconyclothhangers.jpg",
+      "/images/main-images/Cloth-Hangera-1.jpg",
+      "/images/hero/cloth-hanger.png",
+      "/images/hero/cloth-hanger1.jpg",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=400&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=400&q=80",
+      "/images/main-images/balconyclothhangers.jpg",
+      "/images/main-images/Cloth-Hangera-1.jpg",
+      "/images/hero/cloth-hanger.png",
+      "/images/hero/cloth-hanger1.jpg",
+      "/images/hero/cloth-hanger2.webp",
+      "/images/main-images/balconyclothhangers.jpg",
     ],
-    beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
-    afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    beforeImage: "/images/hero/before-balcony.png",
+    afterImage: "/images/main-images/balconyclothhangers.jpg",
     benefits: ["Collapses Flat When Empty", "Heavy-Duty Wall Anchors", "Anti-Corrosion Coated", "Ideal for Low Ceilings", "Railing Hook Custom Fit", "Durable Heavy Weight Support"],
     specsTable: [
       { label: "Material", value: "Epoxy/Chrome Coated Steel" },
@@ -776,7 +776,7 @@ const imageOverrides: Record<string, string> = {
   "balcony-safety-nets": "/images/main-images/BalconyNet-1.jpg",
   "children-safety-nets": "/images/main-images/Children-Safety-Net.jpg",
   "pet-safety-nets": "/images/main-images/BalconyNetWork-1.jpg",
-  "pigeon-safety-nets": "/images/main-images/pigeon-safety-nets-ai.png",
+  "pigeon-safety-nets": "/images/hero/pigeonnet.jpg",
   "bird-spikes-nets": "/images/main-images/Bird-Spikes.jpg",
   "sports-nets": "/images/main-images/Sports-Net-1.jpg",
   "cricket-practice-nets": "/images/main-images/Sports-Net-1.jpg",
@@ -791,7 +791,7 @@ const imageOverrides: Record<string, string> = {
   "staircase-invisible-grills": "/images/main-images/Staircase-Grills.jpg",
   "staircase-safety-grills": "/images/main-images/Staircase-Grills.jpg",
   "ceiling-cloth-hangers": "/images/main-images/Cloth-Hangera-1.jpg",
-  "balcony-cloth-hangers": "/images/main-images/balcony-cloth-hangers-ai.png",
+  "balcony-cloth-hangers": "/images/main-images/balconyclothhangers.jpg",
 };
 
 const categoryImages = {
@@ -814,9 +814,9 @@ const categoryImages = {
     "/images/main-images/Grills-Work.jpg"
   ],
   "cloth-hangers": [
+    "/images/main-images/balconyclothhangers.jpg",
     "/images/main-images/Cloth-Hangera-1.jpg",
     "/images/hero/cloth-hanger.png",
-    "/images/hero/team-hanger-install.png",
     "/images/hero/cloth-hanger1.jpg",
     "/images/hero/cloth-hanger2.webp"
   ]

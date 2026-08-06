@@ -13,18 +13,18 @@ interface GalleryItem {
 const teamWorkGallery: GalleryItem[] = [
   {
     id: 1,
-    image: "/images/hero/team-net-install.png",
+    image: "/images/main-images/BalconyNetWork-1.jpg",
     caption: "Anchoring Balcony Safety Nets",
   },
   {
     id: 2,
-    image: "/images/hero/team-grill-install.png",
+    image: "/images/main-images/Balcony-grill-work.jpg",
     caption: "Invisible Grill Cable Tensioning",
   },
   {
     id: 3,
-    image: "/images/hero/team-hanger-install.png",
-    caption: "Ceiling Cloth Hanger Mounting",
+    image: "/images/main-images/balconyclothhangers.jpg",
+    caption: "Balcony Cloth Hanger Mounting",
   },
   {
     id: 4,

@@ -57,7 +57,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Dual-pipe ceiling pulley hanger system drying clothes space-efficiently.",
   },
   {
-    image: "/images/main-images/balcony-cloth-hangers-ai.png",
+    image: "/images/main-images/balconyclothhangers.jpg",
     category: "cloth-hangers",
     categoryLabel: "Cloth Hangers",
     location: "Porur, Chennai",
@@ -65,7 +65,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Wall-mounted foldable balcony drying rack installation.",
   },
   {
-    image: "/images/main-images/pigeon-safety-nets-ai.png",
+    image: "/images/hero/pigeonnet.jpg",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
     location: "Chennai Hub",
