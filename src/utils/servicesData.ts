@@ -624,50 +624,201 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     faqs: generateFAQsForService("Balcony Cloth Hangers", "cloth-hangers"),
   },
+
+  // Additional Safety & Grill Services
+  "window-grills": {
+    slug: "window-grills",
+    name: "Window Safety Grills",
+    category: "invisible-grills",
+    categoryName: "Invisible Grills",
+    title: "Premium Window Safety Grills Installation in Chennai | JSA",
+    description: "Secure your windows with modern high-tensile SS316 steel wire invisible grills. Weatherproof, anti-rust, and child-safe.",
+    longDescription: "JSA Enterprises installs modern window safety grills across Chennai. Designed with marine-grade SS316 stainless steel wire wrapped in anti-scratch nylon coating, our window grills replace traditional bulky iron grills while offering maximum ventilation, natural light, and fall prevention.",
+    aiOverview: "JSA Window Safety Grills feature high-strength SS316 stainless steel cables clamped in heavy-duty aluminum tracks. They provide clear views, child safety, and high-rise fall protection for home and office windows.",
+    image: "/images/main-images/Window-Grills.jpg",
+    supportingImages: [
+      "/images/main-images/Window-Grills-2.jpg",
+      "/images/main-images/Grills-Work.jpg",
+      "/images/main-images/client-grill-1.jpg",
+      "/images/main-images/Children-InvisibleGrills.jpg"
+    ],
+    gallery: [
+      "/images/main-images/Window-Grills.jpg",
+      "/images/main-images/Window-Grills-2.jpg",
+      "/images/main-images/Grills-Work.jpg",
+      "/images/main-images/client-grill-1.jpg",
+      "/images/main-images/Children-InvisibleGrills.jpg",
+      "/images/main-images/Staircase-Grills.jpg"
+    ],
+    beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    afterImage: "/images/main-images/Window-Grills.jpg",
+    benefits: ["Zero View Blockage", "Child & Toddler Fall Safety", "Rustproof Marine-Grade SS316 Wires", "Easy Emergency Exit", "Bite & Scratch Proof", "Free On-Site Inspection"],
+    specsTable: [
+      { label: "Material", value: "SS316 Stainless Steel Core + Nylon Coating" },
+      { label: "Cable Thickness", value: "2.0mm to 3.0mm" },
+      { label: "Track System", value: "Heavy-duty extruded aluminum frame" },
+      { label: "Spacing", value: "2 inches to 4 inches" },
+      { label: "UV & Corrosion Resistance", value: "High (Marine Grade)" },
+      { label: "Maintenance", value: "Microfiber cloth wipe" }
+    ],
+    faqs: generateFAQsForService("Window Safety Grills", "invisible-grills"),
+  },
+  "staircase-safety-grills": {
+    slug: "staircase-safety-grills",
+    name: "Staircase Safety Grills",
+    category: "invisible-grills",
+    categoryName: "Invisible Grills",
+    title: "Staircase Safety Grills & Banister Cables Chennai | JSA",
+    description: "Protect children and family members on open stairwells with sleek vertical SS316 stainless steel invisible safety grills.",
+    longDescription: "Open staircases and banisters in duplex homes, villas, and commercial properties present serious fall hazards. JSA Enterprises installs modern staircase safety grills using vertical SS316 stainless steel wires, offering unmatched safety with a sleek, minimalist interior aesthetic.",
+    aiOverview: "JSA Staircase Safety Grills use vertical high-tension SS316 cables anchored to stair banisters and ceilings. They close open gaps to protect kids and pets while seamlessly matching modern home interiors.",
+    image: "/images/main-images/Staircase-Grills.jpg",
+    supportingImages: [
+      "/images/main-images/Children-InvisibleGrills.jpg",
+      "/images/main-images/staircase-net-1.jpg",
+      "/images/main-images/Grills-Work.jpg",
+      "/images/main-images/Balcony-Grills.jpg"
+    ],
+    gallery: [
+      "/images/main-images/Staircase-Grills.jpg",
+      "/images/main-images/Children-InvisibleGrills.jpg",
+      "/images/main-images/staircase-net-1.jpg",
+      "/images/main-images/Grills-Work.jpg",
+      "/images/main-images/Balcony-Grills.jpg",
+      "/images/main-images/Window-Grills.jpg"
+    ],
+    beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    afterImage: "/images/main-images/Staircase-Grills.jpg",
+    benefits: ["Prevents Stairwell Falls", "Sleek Minimalist Aesthetic", "High Tensile SS316 Steel", "Ideal for Duplex Homes & Villas", "Zero Sharp Edges", "Custom Spacing & Fit"],
+    specsTable: [
+      { label: "Material", value: "SS316 Stainless Steel Cables" },
+      { label: "Orientation", value: "Vertical / Customized" },
+      { label: "Cable Thickness", value: "2.0mm to 3.0mm" },
+      { label: "Rustproof Rating", value: "100% Rustproof" },
+      { label: "Maintenance", value: "Wipe with damp cloth" }
+    ],
+    faqs: generateFAQsForService("Staircase Safety Grills", "invisible-grills"),
+  },
+  "terrace-safety-nets": {
+    slug: "terrace-safety-nets",
+    name: "Terrace Safety Nets",
+    category: "safety-nets",
+    categoryName: "Safety Nets",
+    title: "Terrace & Rooftop Safety Nets Installation Chennai | JSA",
+    description: "Cover open terraces and rooftops with durable UV-treated safety nets to prevent falls and bird intrusion.",
+    longDescription: "Rooftops and open terraces in residential apartments and schools require strong safety enclosures. JSA Enterprises installs high-density UV-stabilized terrace safety nets that safeguard children, pets, and event spaces without restricting airflow.",
+    aiOverview: "JSA Terrace Safety Nets provide complete rooftop protection using UV-stabilized copolymer nets. Anchored with stainless steel hooks, they create a safe environment on open roofs.",
+    image: "/images/main-images/Terrace-Net.jpg",
+    supportingImages: [
+      "/images/main-images/BalconyNet-1.jpg",
+      "/images/main-images/Safety-Net-Work.jpg",
+      "/images/main-images/Sports-Net-1.jpg",
+      "/images/main-images/Factory-Net-1.jpg"
+    ],
+    gallery: [
+      "/images/main-images/Terrace-Net.jpg",
+      "/images/main-images/BalconyNet-1.jpg",
+      "/images/main-images/Safety-Net-Work.jpg",
+      "/images/main-images/Sports-Net-1.jpg",
+      "/images/main-images/Factory-Net-1.jpg",
+      "/images/main-images/Duct-Area-1.jpg"
+    ],
+    beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    afterImage: "/images/main-images/Terrace-Net.jpg",
+    benefits: ["Full Rooftop Coverage", "UV-Stabilized Lifespan", "Child & Pet Protection", "Pigeon & Bird Exclusion", "High Impact Strength", "Free Site Inspection"],
+    specsTable: [
+      { label: "Material", value: "HDPE Copolymer Nylon" },
+      { label: "Mesh Diameter", value: "30mm to 50mm" },
+      { label: "UV Resistance", value: "High (UV-Stabilized)" },
+      { label: "Anchoring", value: "SS Expansion Bolts & Hooks" }
+    ],
+    faqs: generateFAQsForService("Terrace Safety Nets", "safety-nets"),
+  },
+  "bird-spikes-nets": {
+    slug: "bird-spikes-nets",
+    name: "Bird Control Spikes & Nets",
+    category: "safety-nets",
+    categoryName: "Safety Nets",
+    title: "Polycarbonate & Stainless Steel Bird Spikes Chennai | JSA",
+    description: "Prevent pigeons and birds from roosting on ledges, AC units, and sills with humane anti-bird spikes.",
+    longDescription: "Pigeons perching on window sills, parapet walls, and air conditioner outdoor units cause mess and health hazards. JSA Enterprises installs durable UV-resistant polycarbonate and SS304 bird spikes that deter birds harmlessly.",
+    aiOverview: "JSA Bird Control Spikes offer a humane, maintenance-free solution to stop pigeons from landing on parapets and AC outdoor ledges.",
+    image: "/images/main-images/Bird-Spikes.jpg",
+    supportingImages: [
+      "/images/main-images/Duct-Area-1.jpg",
+      "/images/main-images/BalconyNet-1.jpg",
+      "/images/main-images/Terrace-Net.jpg",
+      "/images/main-images/Factory-Net-1.jpg"
+    ],
+    gallery: [
+      "/images/main-images/Bird-Spikes.jpg",
+      "/images/main-images/Duct-Area-1.jpg",
+      "/images/main-images/BalconyNet-1.jpg",
+      "/images/main-images/Terrace-Net.jpg",
+      "/images/main-images/Factory-Net-1.jpg",
+      "/images/main-images/Safety-Net-Work.jpg"
+    ],
+    beforeImage: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    afterImage: "/images/main-images/Bird-Spikes.jpg",
+    benefits: ["100% Humane Bird Control", "Zero Maintenance", "Weatherproof Polycarbonate Base", "SS304 Stainless Steel Spikes", "Blends with Architecture", "Long-Lasting Protection"],
+    specsTable: [
+      { label: "Material", value: "Polycarbonate Base + SS304 Spikes" },
+      { label: "Spike Height", value: "110mm to 125mm" },
+      { label: "UV Resistance", value: "High UV Stabilization" },
+      { label: "Installation Method", value: "Industrial Sealant / Screws" }
+    ],
+    faqs: generateFAQsForService("Bird Control Spikes & Nets", "safety-nets"),
+  },
 };
 
 // Dynamically override all generic placeholders with JSA's real, client-uploaded safety installation photos
 const imageOverrides: Record<string, string> = {
-  "balcony-safety-nets": "/images/hero/balconysafetynet.jpg",
-  "children-safety-nets": "/images/hero/childrensafetynet.webp",
-  "pet-safety-nets": "/images/hero/pet.jpg",
-  "pigeon-safety-nets": "/images/hero/pigeonnet.jpg",
-  "sports-nets": "/images/hero/sports-safety.webp",
-  "cricket-practice-nets": "/images/hero/cricketpracticenet.jpg",
-  "construction-safety-nets": "/images/hero/constructionnet.webp",
-  "duct-area-safety-nets": "/images/hero/ductarea.webp",
-  "monkey-safety-nets": "/images/hero/monkeysafetynet.webp",
-  "balcony-invisible-grills": "/images/hero/balconygrill.jpg",
-  "window-invisible-grills": "/images/hero/windowgrill.webp",
-  "staircase-invisible-grills": "/images/hero/childrensafetygrill.jpg",
-  "ceiling-cloth-hangers": "/images/hero/cloth-hanger1.jpg",
-  "balcony-cloth-hangers": "/images/hero/cloth-hanger2.webp",
+  "balcony-safety-nets": "/images/main-images/BalconyNet-1.jpg",
+  "children-safety-nets": "/images/main-images/Children-Safety-Net.jpg",
+  "pet-safety-nets": "/images/main-images/BalconyNetWork-1.jpg",
+  "pigeon-safety-nets": "/images/main-images/Bird-Spikes.jpg",
+  "bird-spikes-nets": "/images/main-images/Bird-Spikes.jpg",
+  "sports-nets": "/images/main-images/Sports-Net-1.jpg",
+  "cricket-practice-nets": "/images/main-images/Sports-Net-1.jpg",
+  "construction-safety-nets": "/images/main-images/Factory-Net-1.jpg",
+  "duct-area-safety-nets": "/images/main-images/Duct-Area-1.jpg",
+  "monkey-safety-nets": "/images/main-images/Safety-Net-Work.jpg",
+  "terrace-safety-nets": "/images/main-images/Terrace-Net.jpg",
+  "staircase-safety-nets": "/images/main-images/staircase-net-1.jpg",
+  "balcony-invisible-grills": "/images/main-images/Balcony-Grills.jpg",
+  "window-invisible-grills": "/images/main-images/Window-Grills.jpg",
+  "window-grills": "/images/main-images/Window-Grills.jpg",
+  "staircase-invisible-grills": "/images/main-images/Staircase-Grills.jpg",
+  "staircase-safety-grills": "/images/main-images/Staircase-Grills.jpg",
+  "ceiling-cloth-hangers": "/images/main-images/Cloth-Hangera-1.jpg",
+  "balcony-cloth-hangers": "/images/main-images/Cloth-Hangera-1.jpg",
 };
 
 const categoryImages = {
   "safety-nets": [
-    "/images/hero/safetynets.webp",
-    "/images/hero/safetynets2.jpg",
-    "/images/hero/team-net-install.png",
-    "/images/hero/childrensafetynet.webp",
-    "/images/hero/pigeonnet.jpg",
-    "/images/hero/balconysafetynet.jpg"
+    "/images/main-images/BalconyNet-1.jpg",
+    "/images/main-images/Children-Safety-Net.jpg",
+    "/images/main-images/Bird-Spikes.jpg",
+    "/images/main-images/Sports-Net-1.jpg",
+    "/images/main-images/Factory-Net-1.jpg",
+    "/images/main-images/Duct-Area-1.jpg",
+    "/images/main-images/Terrace-Net.jpg",
+    "/images/main-images/staircase-net-1.jpg"
   ],
   "invisible-grills": [
-    "/images/hero/customgrill.jpg",
-    "/images/hero/invisible-grill.png",
-    "/images/hero/team-grill-install.png",
-    "/images/hero/balconygrill.jpg",
-    "/images/hero/windowgrill.webp",
-    "/images/hero/childrensafetygrill.jpg"
+    "/images/main-images/Balcony-Grills.jpg",
+    "/images/main-images/Window-Grills.jpg",
+    "/images/main-images/Staircase-Grills.jpg",
+    "/images/main-images/Children-InvisibleGrills.jpg",
+    "/images/main-images/client-grill-1.jpg",
+    "/images/main-images/Grills-Work.jpg"
   ],
   "cloth-hangers": [
+    "/images/main-images/Cloth-Hangera-1.jpg",
     "/images/hero/cloth-hanger.png",
     "/images/hero/team-hanger-install.png",
     "/images/hero/cloth-hanger1.jpg",
-    "/images/hero/cloth-hanger2.webp",
-    "/images/hero/cloth-hanger.png",
-    "/images/hero/cloth-hanger1.jpg"
+    "/images/hero/cloth-hanger2.webp"
   ]
 };
 

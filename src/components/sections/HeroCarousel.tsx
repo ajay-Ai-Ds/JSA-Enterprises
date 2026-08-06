@@ -19,16 +19,16 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "/images/hero/pigeonnet.jpg",
-    badge: "Pigeon Exclusion",
-    title: "100% Pigeon & Bird Proofing Balcony Nets",
-    subtitle: "Keep pigeons and birds away from nesting on your balcony. Elegant, durable, and transparent netting solutions.",
-    ctaText: "View Bird Netting",
+    image: "/images/main-images/BalconyNet-1.jpg",
+    badge: "Pigeon & Safety Exclusion",
+    title: "100% Fall-Proof & Bird Exclusion Balcony Nets",
+    subtitle: "Keep your children, pets, and balconies completely safe. Heavy-duty, transparent, and UV-stabilized netting solutions.",
+    ctaText: "View Safety Nets",
     ctaLink: "#services",
   },
   {
     id: 2,
-    image: "/images/hero/balconygrill.jpg",
+    image: "/images/main-images/Balcony-Grills.jpg",
     badge: "Architectural Elegance",
     title: "Elegant Invisible Grills for Windows & Balconies",
     subtitle: "Get zero-blockage panoramic views and top-tier security. Made of high-grade 316 marine stainless steel wires wrapped in nylon coating.",
@@ -37,7 +37,7 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "/images/hero/cloth-hanger1.jpg",
+    image: "/images/main-images/Cloth-Hangera-1.jpg",
     badge: "Space-Saving Innovation",
     title: "Premium Ceiling & Balcony Cloth Hangers",
     subtitle: "Maximize your living space with our smooth dual-pipe pulley drying system. Rust-proof stainless steel pipes engineered for absolute convenience.",
@@ -46,11 +46,11 @@ const slides: Slide[] = [
   },
   {
     id: 4,
-    image: "/images/hero/safetynets.webp",
-    badge: "Premium Protection",
-    title: "Heavy-Duty Safety Nets & Balcony Netting Solutions",
-    subtitle: "Absolute safety for your children and pets without compromising ventilation. Customized high-tensile netting engineered to endure extreme Chennai weather.",
-    ctaText: "Explore Safety Nets",
+    image: "/images/main-images/Window-Grills.jpg",
+    badge: "Window Safety Excellence",
+    title: "Modern Window & Staircase Safety Steel Grills",
+    subtitle: "Protect kids and family members without bulky iron grates. Minimalist, high-tensile SS316 steel wire protection.",
+    ctaText: "Explore Window Grills",
     ctaLink: "#services",
   },
 ];
