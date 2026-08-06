@@ -776,7 +776,7 @@ const imageOverrides: Record<string, string> = {
   "balcony-safety-nets": "/images/main-images/BalconyNet-1.jpg",
   "children-safety-nets": "/images/main-images/Children-Safety-Net.jpg",
   "pet-safety-nets": "/images/main-images/BalconyNetWork-1.jpg",
-  "pigeon-safety-nets": "/images/main-images/Bird-Spikes.jpg",
+  "pigeon-safety-nets": "/images/main-images/pigeon-safety-nets-ai.png",
   "bird-spikes-nets": "/images/main-images/Bird-Spikes.jpg",
   "sports-nets": "/images/main-images/Sports-Net-1.jpg",
   "cricket-practice-nets": "/images/main-images/Sports-Net-1.jpg",
@@ -791,7 +791,7 @@ const imageOverrides: Record<string, string> = {
   "staircase-invisible-grills": "/images/main-images/Staircase-Grills.jpg",
   "staircase-safety-grills": "/images/main-images/Staircase-Grills.jpg",
   "ceiling-cloth-hangers": "/images/main-images/Cloth-Hangera-1.jpg",
-  "balcony-cloth-hangers": "/images/main-images/Cloth-Hangera-1.jpg",
+  "balcony-cloth-hangers": "/images/main-images/balcony-cloth-hangers-ai.png",
 };
 
 const categoryImages = {
