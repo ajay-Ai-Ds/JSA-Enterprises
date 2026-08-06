@@ -521,17 +521,4 @@ export const projectsData: Record<string, ProjectDetail> = {
   },
 };
 
-// Dynamically override all generic project photo placeholders with JSA's real, client-uploaded safety installation photos
-Object.keys(projectsData).forEach((slug) => {
-  const project = projectsData[slug];
-  if (project.category === "safety-nets") {
-    project.image = "/images/hero/balconysafetynet.jpg";
-    project.afterImage = "/images/hero/balconysafetynet.jpg";
-  } else if (project.category === "invisible-grills") {
-    project.image = "/images/hero/balconygrill.jpg";
-    project.afterImage = "/images/hero/balconygrill.jpg";
-  } else if (project.category === "cloth-hangers") {
-    project.image = "/images/hero/cloth-hanger1.jpg";
-    project.afterImage = "/images/hero/cloth-hanger1.jpg";
-  }
-});
+
