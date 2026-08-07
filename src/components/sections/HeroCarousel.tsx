@@ -198,7 +198,9 @@ export default function HeroCarousel() {
                 alt={slide.title}
                 fill
                 priority={idx === 1}
-                sizes="100vw"
+                loading={idx === 1 ? "eager" : "lazy"}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-black/60" />
