@@ -48,9 +48,9 @@ const slides: Slide[] = [
     id: 4,
     image: "/images/main-images/Window-Grills.jpg",
     badge: "Window Safety Excellence",
-    title: "Modern Window & Staircase Safety Steel Grills",
+    title: "Modern Window & Staircase Invisible Steel Grills",
     subtitle: "Protect kids and family members without bulky iron grates. Minimalist, high-tensile SS316 steel wire protection.",
-    ctaText: "Explore Window Grills",
+    ctaText: "Explore Invisible Grills",
     ctaLink: "#services",
   },
 ];

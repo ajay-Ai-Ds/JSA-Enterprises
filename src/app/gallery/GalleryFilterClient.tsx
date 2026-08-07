@@ -37,15 +37,15 @@ const galleryData: GalleryPhoto[] = [
     category: "invisible-grills",
     categoryLabel: "Invisible Grills",
     location: "ECR, Chennai",
-    serviceName: "Window Safety Grills",
-    description: "Modern high-tensile SS316 steel wire window safety grills.",
+    serviceName: "Window Invisible Grills",
+    description: "Modern high-tensile SS316 steel wire window invisible grills.",
   },
   {
     image: "/images/main-images/Staircase-Grills.jpg",
     category: "invisible-grills",
     categoryLabel: "Invisible Grills",
     location: "Anna Nagar, Chennai",
-    serviceName: "Staircase Safety Grills",
+    serviceName: "Staircase Invisible Grills",
     description: "Sleek vertical SS316 cable grills securing duplex stairwell banisters.",
   },
   {
@@ -89,7 +89,7 @@ const galleryData: GalleryPhoto[] = [
     description: "Humane polycarbonate and stainless steel bird spikes on AC ledges.",
   },
   {
-    image: "/images/main-images/Sports-Net-1.jpg",
+    image: "/images/main-images/cricket.jpeg",
     category: "safety-nets",
     categoryLabel: "Safety Nets",
     location: "Perungudi, Chennai",

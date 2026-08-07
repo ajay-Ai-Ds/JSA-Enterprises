@@ -26,6 +26,7 @@ const servicesList = [
   { value: "balcony-safety-nets", label: "Balcony Safety Nets" },
   { value: "children-safety-nets", label: "Children Safety Nets" },
   { value: "pet-safety-nets", label: "Pet Safety Nets" },
+  { value: "staircase-safety-nets", label: "Staircase Safety Nets" },
   { value: "pigeon-safety-nets", label: "Pigeon Safety Nets" },
   { value: "sports-nets", label: "Sports Nets" },
   { value: "construction-safety-nets", label: "Construction Safety Nets" },
